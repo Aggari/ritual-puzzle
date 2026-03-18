@@ -197,18 +197,23 @@ export default function PuzzleGame() {
       }}>
 
         {/* Title */}
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <h1 style={{
-            fontSize: 26, margin: 0, color: C.text, letterSpacing: 1,
-            fontFamily: "'DM Serif Display', Georgia, serif", fontWeight: 400,
-          }}>Ritual Puzzle</h1>
-          {isAdmin && (
-            <span style={{
-              fontSize: 9, padding: "3px 8px", borderRadius: 5,
-              background: C.dangerBg, border: `1px solid ${C.danger}`,
-              color: C.danger, fontWeight: 700, letterSpacing: 1,
-            }}>ADMIN</span>
-          )}
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <h1 style={{
+              fontSize: 26, margin: 0, color: C.text, letterSpacing: 1,
+              fontFamily: "'DM Serif Display', Georgia, serif", fontWeight: 400,
+            }}>Ritual Puzzle</h1>
+            {isAdmin && (
+              <span style={{
+                fontSize: 9, padding: "3px 8px", borderRadius: 5,
+                background: C.dangerBg, border: `1px solid ${C.danger}`,
+                color: C.danger, fontWeight: 700, letterSpacing: 1,
+              }}>ADMIN</span>
+            )}
+          </div>
+          <span style={{ fontSize: 11, color: C.textMuted, fontWeight: 400, letterSpacing: 0.5 }}>
+            created by badang
+          </span>
         </div>
 
         {/* Stats */}
